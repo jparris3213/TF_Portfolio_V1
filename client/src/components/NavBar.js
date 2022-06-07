@@ -5,7 +5,7 @@ import { useQuery } from "@apollo/client";
 const Navigation = () => {
   return (
     <div className="navbar">
-      <img
+      <div className="navitem"><img
         className="navlogo"
         src={require("../media/TFLogo.png")}
         alt="Blue and Gold Abstract design of a Lens, Type Forty Productions Logo"
@@ -14,10 +14,17 @@ const Navigation = () => {
         <div className="company-title-one">Type|Forty</div>
         <div className="company-title-two">Productions LLC</div>
       </div>
-
-      <div className="navitem">
-        <div>Test</div>
       </div>
+      
+      
+      <div classname="navitem">
+        <ul className="menu">
+          <li className="menuli">About</li>
+          <li className="menuli">Portfolio</li>
+          <li className="menuli">Contact</li>
+        </ul>
+      </div>
+      
     </div>
   );
 };
