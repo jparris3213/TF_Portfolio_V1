@@ -11,3 +11,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'Abril-Fatface';
+  src: local('Abril'), url(./fonts/AbrilFatface-Regular.ttf) format('truetype');
+
+  
+}
+
+@font-face {
+  font-family: 'Public-Sans-Thin';
+  src: local('Sans-Thin'), url(./fonts/Public-Sans-Thin.ttf) format('truetype');
+}
