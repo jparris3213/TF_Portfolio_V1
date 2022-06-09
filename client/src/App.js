@@ -58,12 +58,10 @@ function App() {
     <ApolloProvider client={client}>
       <Router>
         <Navbar />
-        <div style={{ marginBottom: "10rem" }}>
         <Routes>
             <Route exact path="/" element={<Splash />} />
             <Route path="*" element={<Splash />} />
           </Routes>
-        </div>
       </Router>
     </ApolloProvider>
   );

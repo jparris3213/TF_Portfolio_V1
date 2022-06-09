@@ -14,6 +14,8 @@
   }
 }
 
+
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -38,16 +40,19 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
-  width:auto;
+  width: auto;
+  border-bottom: groove rgb(222, 144, 14) 6px;
+  height: 6vh;
 }
+
 .company-title-one {
   font-family: Abril-Fatface, serif;
   float: left;
   text-align: center;
-  font-size: 45px;
+  font-size: 40px;
   text-decoration: none;
-  text-shadow: rgb(222,144,14) 1px 0 3px ;
-  color: rgb(1,41,62);
+  text-shadow: rgb(222, 144, 14) 1px 0 3px;
+  color: rgb(1, 41, 62);
 }
 
 .company-title-two {
@@ -57,12 +62,12 @@
   float: left;
   text-align: center;
   font-size: 30px;
-  text-shadow: rgb(255, 255, 255) 1px 0 10px;
-  color: rgb(222,144,14);
+  color: rgb(222, 144, 14);
 }
 
 .navitem {
-  display:flex;
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
   padding: 0;
   margin: 0;
@@ -70,7 +75,7 @@
 
 .menu {
   flex-wrap: wrap;
-  display:flex;
+  display: flex;
   align-items: center;
   padding: 0;
   margin-top: 14px;
@@ -84,16 +89,16 @@
 .menuli {
   margin: 0;
   padding: 0 10px;
-  border-style: solid;
-  border-radius: 15%;
   font-family: Public-Sans-Thin, sans-serif;
-  color:rgb(222,144,14);
+  color: rgb(222, 144, 14);
+  margin: 2px;
 }
 
 .menuli:hover {
-  background-color:#36454F;
+  background-color: rgb(87, 57, 6);
   font-size: 22pt;
 }
+
 .navlogo {
   object-fit: fill;
   width: 3%;
@@ -103,11 +108,41 @@
   padding: 2px;
 
 }
+
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.splash {
+  background-color: #36454F;
+  font-family: Public-Sans-Thin, sans-serif;
+  color: rgb(222, 144, 14);
+  height: 93vh;
+  justify-content: center;
+  display:flex;
+}
+
+.contentbox {
+  background-color: #36454F;
+  border: solid rgb(222, 144, 14) 3px;
+  height: 50vh;
+  width: 50vh;
+  margin: 2vh;
+  padding: 2vh;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5ch;
+}
+
+.logo {
+  object-fit: fill;
+  width: 50vh;
 }

@@ -17,7 +17,7 @@ const Navigation = () => {
       </div>
       
       
-      <div classname="navitem">
+      <div className="navitem">
         <ul className="menu">
           <li className="menuli">About</li>
           <li className="menuli">Portfolio</li>
