@@ -16,12 +16,12 @@ import './App.css';
 
 
 
-
 //Component Imports
 import Navbar from "./components/NavBar";
 
 //Page Import Dialogs
 import Splash from "./Pages/Splash";
+import LogoLoop from "./Pages/LogoLoop";
 
 //Authentication Junction What's your Function?
 
@@ -60,6 +60,7 @@ function App() {
         <Navbar />
         <Routes>
             <Route exact path="/" element={<Splash />} />
+            <Route exact path="/Loading" element={<LogoLoop />} />
             <Route path="*" element={<Splash />} />
           </Routes>
       </Router>
