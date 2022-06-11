@@ -132,6 +132,8 @@
   height: 93vh;
   justify-content: center;
   display:flex;
+  flex-wrap: wrap;
+  
 }
 
 .contentbox {
