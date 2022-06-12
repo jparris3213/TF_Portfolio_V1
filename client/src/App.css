@@ -40,9 +40,11 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
-  width: auto;
+  width: 99vw;
   border-bottom: groove rgb(222, 144, 14) 6px;
   height: 6vh fit-content;
+  position:fixed;
+  top:0;
 }
 
 .company-title-one {
@@ -56,6 +58,7 @@
 }
 .company-title-one:hover {
   text-shadow: rgb(222, 144, 14) -1px -1px 15px;
+  cursor: pointer;
 }
 
 .company-title-two {
@@ -96,12 +99,34 @@
   font-family: Public-Sans-Thin, sans-serif;
   color: rgb(222, 144, 14);
   margin: 2px;
-}
+  position: relative;
+  display: flex;
 
+}
 .menuli:hover {
   background-color: rgb(87, 57, 6);
   font-size: 22pt;
+  text-shadow: #ffffff 1px 1px 10px;
+  cursor: pointer;
+  
 }
+
+.dropdown {
+  position:relative;
+  display:block;
+}
+
+.dropdown > ul {
+  display: none;
+}
+
+.dropdown:hover > ul {
+  display: block;
+  background-color: #282c34;
+  border-radius: 5%;
+}
+
+
 
 .navlogo {
   object-fit: fill;
@@ -126,10 +151,11 @@
 }
 
 .splash {
-  background-color: #192024;
+  background-image: linear-gradient(#192024,rgb(1,41,62));
   font-family: Public-Sans-Thin, sans-serif;
   color: rgb(222, 144, 14);
-  height: 93vh;
+  height: 200vh;
+  padding-top: 4vh;
   justify-content: center;
   display:flex;
   flex-wrap: wrap;
@@ -140,29 +166,35 @@
   background-color: rgb(1,41,62);
   border: solid rgb(222, 144, 14) 3px;
   height: fit-content;
-  width: auto;
+  width: 100vw;
   margin: 2vh;
   padding: 10px;
   justify-content: center;
   align-items: center;
-  border-radius: 5ch;
-
+  border-radius: 2ch;
 }
 
 
 
+
+
 .contentbox > img {
-  width: 45vh;
-  border-radius: 5ch;
-  margin: 8px;
+  width: 23vw;
+  border-radius: 2ch;
+  margin: 5px;
   border: solid rgb(222, 144, 14) 3px;}
 
 .contentbox > img:hover {
-  background-blend-mode: soft-light;
-  opacity: 45%;
+  opacity: 90%;
+  filter:grayscale(55%);
 }
 
 .logo {
   object-fit: fill;
   width: 50vh;
+}
+
+.information {
+  background-color: aliceblue;
+  color: antiquewhite;
 }
