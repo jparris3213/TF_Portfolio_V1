@@ -10,7 +10,6 @@ import {
   BrowserRouter as Router,
   Route,
   Routes,
-  Navigate,
 } from "react-router-dom";
 import './App.css';
 
@@ -22,6 +21,7 @@ import Navbar from "./components/NavBar";
 //Page Import Dialogs
 import Splash from "./Pages/Splash";
 import LogoLoop from "./Pages/LogoLoop";
+import Gallery from "./Pages/Gallery";
 
 //Authentication Junction What's your Function?
 
@@ -60,6 +60,7 @@ function App() {
         <Navbar />
         <Routes>
             <Route exact path="/" element={<Splash />} />
+            <Route path="/portfolio" element={<Gallery />} />
             <Route exact path="/Loading" element={<LogoLoop />} />
             <Route path="*" element={<Splash />} />
           </Routes>
