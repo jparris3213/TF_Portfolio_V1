@@ -35,7 +35,7 @@ const Navigation = () => {
           <li className="menuli dropdown">
             Portfolio
             <ul>
-              <li>portraiture</li>
+              <Link to={"/portfolio"}><li>portraiture</li></Link>
               <li>events</li>
               <li>travel</li>
             </ul>
