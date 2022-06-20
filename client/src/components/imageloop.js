@@ -11,7 +11,7 @@ class ImageLoop extends Component {
   
     componentWillMount() {
       const list = this.importAll(
-        require.context("../media/Portfolio", false, /\.(jpg)$/)
+        require.context("../media/Portfolio/Portraits", false, /\.(jpg)$/)
       );
       this.setState({
         listOfImages: list
