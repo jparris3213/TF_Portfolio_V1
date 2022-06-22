@@ -22,6 +22,7 @@ import Navbar from "./components/NavBar";
 import Splash from "./Pages/Splash";
 import LogoLoop from "./Pages/LogoLoop";
 import Gallery from "./Pages/Gallery";
+import VideoTest from "./Pages/Videotest";
 
 //Authentication Junction What's your Function?
 
@@ -61,6 +62,7 @@ function App() {
         <Routes>
             <Route exact path="/" element={<Splash />} />
             <Route path="/portfolio" element={<Gallery />} />
+            <Route path="/video_test" element={<VideoTest />} />
             <Route exact path="/Loading" element={<LogoLoop />} />
             <Route path="*" element={<Splash />} />
           </Routes>
