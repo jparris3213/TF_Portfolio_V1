@@ -1,9 +1,10 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/tfprodcustDB', {
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/tfserver2", {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  useCreateIndex: true,
+  useFindAndModify: false,
 });
 
 module.exports = mongoose.connection;
-
-
-

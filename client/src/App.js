@@ -23,6 +23,7 @@ import Splash from "./Pages/Splash";
 import LogoLoop from "./Pages/LogoLoop";
 import Gallery from "./Pages/Gallery";
 import VideoTest from "./Pages/Videotest";
+import SignupForm from "./components/SignupForm";
 
 //Authentication Junction What's your Function?
 
@@ -64,6 +65,7 @@ function App() {
             <Route path="/portfolio" element={<Gallery />} />
             <Route path="/video_test" element={<VideoTest />} />
             <Route exact path="/Loading" element={<LogoLoop />} />
+            <Route path="/signup" element={<SignupForm />} />
             <Route path="*" element={<Splash />} />
           </Routes>
       </Router>
