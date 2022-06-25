@@ -57,7 +57,7 @@ const Navigation = () => {
               <>{Auth.loggedIn() ? (
               <Nav.Link onClick={() => setShowModal(true)}>Login/Sign Up</Nav.Link> 
               ) : (
-              <Nav.Link onClick={() => setShowModal(true)}>Login/Sign Up</Nav.Link>)}</>
+              <Nav.Link>Log Out</Nav.Link>)}</>
               
               <li>customer portal</li>
               <li>inquiries</li>

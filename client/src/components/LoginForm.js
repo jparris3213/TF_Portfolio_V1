@@ -29,7 +29,7 @@ const LoginForm = () => {
     };
 
     const handleFormSubmit = async (event) => {
-        event.preventDevault();
+        event.preventDefault();
 
         const form = event.currentTarget;
         if (form.checkValidity() === false) {
