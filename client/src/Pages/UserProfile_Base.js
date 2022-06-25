@@ -1,0 +1,3 @@
+// This will be the basic "Splash" Page for the User, with the components brought in according to what kind of "user" they are. If they are a Customer, than a listing of their projects, invoices to be paid, etc. Will display. As well as gallery links to their stuff
+// If for example they are a Type Forty Productions "Employee" they will have components that display: Upcoming projects, current projects, to do, timesheet, etc. That pertains to their Department (This will LIKELY need to be based a bit off the Employee Tracking Homework in terms of structure)
+//I will likely Psudeo-Code a bit to get a good idea of what the whole thing will look like first before beginning the coding now that we have connectivity between front and back end.

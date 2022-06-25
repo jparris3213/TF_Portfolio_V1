@@ -1,0 +1,1 @@
+///This will display the gallery of the User themselves, without interacting with any other User's gallery to allow seperate profiles to be used. This is ESPECIALLY important for Security for thoes who choose to do Portraiture with TypeForty
