@@ -9,6 +9,11 @@ import Auth from '../utils/auth';
 
 const Navigation = () => {
 
+  const logout = (event) => {
+    event.preventDefault();
+    Auth.logout();
+  };
+
   //modal display state
   const [showModal, setShowModal] = useState(false);
 
@@ -54,12 +59,8 @@ const Navigation = () => {
           <li className="menuli dropdown">
             Contact
             <ul>
-              <>{Auth.loggedIn() ? (
-              <Nav.Link onClick={() => setShowModal(true)}>Login/Sign Up</Nav.Link> 
-              ) : (
-              <Nav.Link>Log Out</Nav.Link>)}</>
-              
-              <li>customer portal</li>
+              <li><Nav.Link onClick={() => setShowModal(true)}>Login/Sign Up</Nav.Link> </li>
+              <li><Nav.Link onClick={logout}>Log Out</Nav.Link></li>
               <li>inquiries</li>
               <li>FAQ/Support</li>
             </ul>
