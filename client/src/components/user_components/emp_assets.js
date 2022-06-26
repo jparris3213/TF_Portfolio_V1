@@ -1,0 +1,1 @@
+//assigned assets to Employees (IE If it's an Animator, access to Animation assets)

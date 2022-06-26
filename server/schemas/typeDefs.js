@@ -8,6 +8,13 @@ const typeDefs = gql`
         password: String!
         }
 
+    type Customer {
+        _id: ID!
+        galleries:[String]
+        invoices:[String]
+        projects:[String]
+        paperwork:[String]}
+
     type Auth {
         token: ID!
         user: User
